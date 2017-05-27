@@ -40,14 +40,13 @@ div{
 
 #squer3{
     background-color: darkgreen;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
-    transition-delay: 0.1s;
-  
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
 }
 
 #squer3:hover{
     width: 300px;
     height: 300px;
+        -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
 }
